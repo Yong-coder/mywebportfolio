@@ -1,0 +1,98 @@
+{
+  "theme": "light",
+  "archetype": "4",
+  "archetype_name": "Swiss & High-Contrast",
+  "colors": {
+    "background": "#F4F4F0",
+    "foreground": "#111111",
+    "primary": "#002FA7",
+    "primary_foreground": "#FFFFFF",
+    "secondary": "#E5E5E5",
+    "secondary_foreground": "#111111",
+    "accent": "#002FA7",
+    "accent_foreground": "#FFFFFF",
+    "muted": "#EBEBE8",
+    "muted_foreground": "#666666",
+    "border": "#111111",
+    "destructive": "#E63946",
+    "destructive_foreground": "#FFFFFF"
+  },
+  "typography": {
+    "headings": {
+      "font_family": "Outfit, sans-serif",
+      "weights": ["400", "700", "900"],
+      "usage": "Use Black (900) or Bold (700) for massive impact on Hero and section headers. Keep letter spacing tight (tracking-tighter)."
+    },
+    "body": {
+      "font_family": "'JetBrains Mono', monospace",
+      "weights": ["400", "500"],
+      "usage": "Use for all body text, tags, skills, and dates to reinforce the technical/IT persona but in a structured, sterile way."
+    }
+  },
+  "layout_and_spacing": {
+    "philosophy": "Brutalist Swiss Grid. Focus on asymmetrical layouts, sharp edges, heavy borders (1px solid #111111), and generous negative space.",
+    "containers": "Use sharp corners (rounded-none) for all cards and containers. Borders must be stark and visible.",
+    "grid_system": "Mode A: 'Tetris' grid for the Hero and Skills sections. Mode B: 'Control Room' grid for the Experience timeline."
+  },
+  "components": {
+    "buttons": "Sharp edges, flat background. Default: transparent with 1px #111111 border. Hover: #111111 background, #FFFFFF text. Primary CTA: #002FA7 background, #FFFFFF text.",
+    "cards": "Flat, sharp borders (border border-[#111111]). No shadows. Inner padding must be generous (p-8 or p-12).",
+    "navigation": "Sticky, brutalist header with a solid background (#F4F4F0) and heavy bottom border. Logo/Name on left, uppercase monospace links on right.",
+    "forms": "Inputs should have sharp borders, rounded-none, transparent background, and #111111 text. Labels should be monospace uppercase.",
+    "tags": "Small uppercase monospace text with a 1px border. No background fill."
+  },
+  "motion": {
+    "general": "Minimal, functional. Hover states should be instant or very fast to feel responsive and mechanical.",
+    "scroll": "Use smooth scrolling to give the stark UI a premium momentum."
+  },
+  "content_structure": {
+    "hero": {
+      "layout": "Massive typography for 'IAN LEMUEL G. DE GUZMAN'. Left aligned. An overline tag 'IT SUPPORT & SUPERVISOR'. Use abstract architecture/tech image in a strictly bordered grid cell next to it.",
+      "ctas": "Get In Touch, View Experience."
+    },
+    "about": {
+      "layout": "Grid split: Left side large profile summary text. Right side: Dense 'Control Room' bento for Stats (7+, 5, 100%) and Personal Details list."
+    },
+    "skills": {
+      "layout": "Brutalist index/manifest layout. Categories as table-like headers. Skills listed in monospace tags."
+    },
+    "experience": {
+      "layout": "Timeline as a stark, border-collapsed grid or table. Massive dates on the left cell, Job title and details on the right cell. Use JetBrains Mono for dates."
+    },
+    "education": {
+      "layout": "Similar border-heavy layout as experience. Distinctly separated."
+    },
+    "contact": {
+      "layout": "Stark, massive contact section. Huge 'Get In Touch' text. Simple, sharp-edged form."
+    }
+  },
+  "media": {
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1610496571096-8367bdbbae2b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODd8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGFyY2hpdGVjdHVyZSUyMG1pbmltYWwlMjBibGFjayUyMGFuZCUyMHdoaXRlfGVufDB8fHx8MTc3ODMyNTk1N3ww&ixlib=rb-4.1.0&q=85",
+        "description": "Abstract brutalist architecture for Hero visual or section divider",
+        "category": "hero_abstract_bg"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1561518065-63dc13612450?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTV8MHwxfHNlYXJjaHwxfHxzZXJ2ZXIlMjByYWNrJTIwbWluaW1hbCUyMHdoaXRlfGVufDB8fHx8MTc3ODMyNTk2Nnww&ixlib=rb-4.1.0&q=85",
+        "description": "Minimal IT/Tech Server texture, high contrast black and white",
+        "category": "tech_texture"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1706565026544-a9b0f6b387e3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MjJ8MHwxfHNlYXJjaHwxfHxtYW4lMjBwb3J0cmFpdCUyMG1pbmltYWwlMjBibGFjayUyMGFuZCUyMHdoaXRlJTIwc3R1ZGlvfGVufDB8fHx8MTc3ODMyNTk2Nnww&ixlib=rb-4.1.0&q=85",
+        "description": "Black and white studio portrait for About Me section placeholder",
+        "category": "avatar_placeholder"
+      }
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Install and configure the required Google fonts: 'Outfit' for headings and 'JetBrains Mono' for body/technical text.",
+    "Do NOT use standard Shadcn cards with rounded corners. Override all border-radii to 0 (rounded-none).",
+    "Use 1px solid #111111 borders extensively to divide layout sections (border-collapse style). Do not use soft drop shadows.",
+    "Background must be #F4F4F0. Use International Klein Blue (#002FA7) strictly for primary CTAs or select hover highlights.",
+    "Implement Lenis for smooth scrolling.",
+    "Include data-testid attributes on all interactive elements (e.g., data-testid='contact-submit-button').",
+    "Ensure headings (Outfit) have tracking-tight or tracking-tighter applied.",
+    "Present technical details (Skills, Dates, Server names) strictly in monospace to evoke an IT manifest feel."
+  ]
+}
