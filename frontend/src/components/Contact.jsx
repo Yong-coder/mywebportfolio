@@ -6,10 +6,13 @@ import { profile } from "../data/portfolio";
 import SectionHeader from "./SectionHeader";
 import { useReveal } from "../hooks/useReveal";
 
-const EMAILJS_SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
-const EMAILJS_TEMPLATE_AUTOREPLY = process.env.REACT_APP_EMAILJS_TEMPLATE_AUTOREPLY;
-const EMAILJS_TEMPLATE_OWNER = process.env.REACT_APP_EMAILJS_TEMPLATE_OWNER;
-const EMAILJS_PUBLIC_KEY = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
+
+const EMAILJS_SERVICE_ID = "service_y62bw9l";
+const EMAILJS_TEMPLATE_AUTOREPLY = "template_0zv04uc";
+const EMAILJS_TEMPLATE_OWNER = "template_8evn0vd";
+const EMAILJS_PUBLIC_KEY = "jqspvP2h5aCoFAHwo";
+
+
 
 const isValidEmail = (v) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
 
