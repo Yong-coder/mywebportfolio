@@ -43,21 +43,30 @@ export const Contact = () => {
         return Object.keys(e).length === 0;
     };
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        if (!validate()) {
-            toast.error("Please fix the highlighted fields.");
-            return;
-        }
-        if (
-            !EMAILJS_SERVICE_ID ||
-            !EMAILJS_TEMPLATE_AUTOREPLY ||
-            !EMAILJS_TEMPLATE_OWNER ||
-            !EMAILJS_PUBLIC_KEY
-        ) {
-            toast.error("Email service is not configured.");
-            return;
-        }
+const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    console.log("ENV CHECK:", {
+        service: EMAILJS_SERVICE_ID,
+        owner: EMAILJS_TEMPLATE_OWNER,
+        auto: EMAILJS_TEMPLATE_AUTOREPLY,
+        key: EMAILJS_PUBLIC_KEY
+    });
+
+    if (!validate()) {
+        toast.error("Please fix the highlighted fields.");
+        return;
+    }
+    if (
+        !EMAILJS_SERVICE_ID ||
+        !EMAILJS_TEMPLATE_AUTOREPLY ||
+        !EMAILJS_TEMPLATE_OWNER ||
+        !EMAILJS_PUBLIC_KEY
+    ) {
+        toast.error("Email service is not configured.");
+        return;
+    }
+
         setSending(true);
         try {
             // Shared params used by both templates
