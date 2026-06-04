@@ -1,0 +1,28 @@
+name: Azure Static Web Apps CI/CD
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build_and_deploy_job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build And Deploy
+        uses: Azure/static-web-apps-deploy@v1
+        env:
+          REACT_APP_EMAILJS_SERVICE_ID: ${{ secrets.REACT_APP_EMAILJS_SERVICE_ID }}
+          REACT_APP_EMAILJS_TEMPLATE_AUTOREPLY: ${{ secrets.REACT_APP_EMAILJS_TEMPLATE_AUTOREPLY }}
+          REACT_APP_EMAILJS_TEMPLATE_OWNER: ${{ secrets.REACT_APP_EMAILJS_TEMPLATE_OWNER }}
+          REACT_APP_EMAILJS_PUBLIC_KEY: ${{ secrets.REACT_APP_EMAILJS_PUBLIC_KEY }}
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_ZEALOUS_RIVER_079CC4D03 }}
+          action: "upload"
+          app_location: "./frontend"
+          api_location: ""
+          output_location: "build"
+          app_build_command: "yarn build"
