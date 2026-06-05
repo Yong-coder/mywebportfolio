@@ -1,20 +1,24 @@
 export const profile = {
     name: "Ian Lemuel G. De Guzman",
     nameShort: "Ian De Guzman",
-    role: "IT Support & Supervisor",
+    role: "IT Support | System Administrator",
     tagline:
-        "7+ years of experience managing IT operations in educational and corporate environments. Specialized in Windows Server, Microsoft 365, and IT Service Management.",
+        "7+ years managing IT operations in corporate and educational environments, specializing in Windows Server, Microsoft 365, Azure services, and IT service management.",
     location: "Doha, Qatar",
     email: "careers@ianportfolio.work",
     phone: "+974 7093 6479",
     summary: [
-        "IT Support and Supervisor with 7+ years of experience managing IT operations in educational and corporate environments in Qatar and the Philippines.",
+        "IT SUPPORT SPECIALIST | SYSTEM ADMINISTRATOR ",
+        "IT Support Specialist with 7+ years of experience managing IT operations in educational and corporate environments in Qatar and the Philippines.",
         "Skilled in Windows Server administration, Microsoft 365, LAN/WAN networking, endpoint management, and IT service management. Proven ability to deliver reliable IT operations, resolve incidents efficiently, and maintain secure and stable systems aligned with organizational standards and SLAs.",
+        
+        "Currently expanding skills in Azure, Linux administration, and networking."
+        
     ],
     stats: [
         { value: "7+", label: "Years Experience" },
         { value: "5", label: "Organizations" },
-        { value: "100%", label: "SLA Compliance" },
+        { value: "99%", label: "SLA Compliance" },
     ],
     personal: [
         { label: "Nationality", value: "Filipino" },
@@ -35,6 +39,8 @@ export const skillCategories = [
             "Active Directory",
             "DNS, DHCP, GPO",
             "File Servers",
+            
+
         ],
     },
     {
@@ -79,8 +85,10 @@ export const experience = [
             "Maintain servers, networks, desktops, laptops, printers, projectors, PA systems, and AV equipment",
             "Support video conferencing systems, LCD screens, smart boards, and classroom technology",
             "Create and maintain technical and procedural documentation",
+            "Reset user passwords and manage account access",
             "Perform OS imaging, software installation, data migration, and system backups",
             "Manage IT asset inventory and recommend upgrades or replacements",
+            "Coordinate with Qatar Foundation IT for system upgrades and security compliance",
             "Enroll and manage devices using JAMF (Apple) and Microsoft Intune (HP & Dell)",
             "Provide on-site, email, and phone support while adhering to SLA requirements",
         ],
