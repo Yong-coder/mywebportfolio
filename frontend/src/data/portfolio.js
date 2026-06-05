@@ -89,6 +89,7 @@ export const experience = [
             "Perform OS imaging, software installation, data migration, and system backups",
             "Manage IT asset inventory and recommend upgrades or replacements",
             "Coordinate with Qatar Foundation IT for system upgrades and security compliance",
+            "Provide IT support for VIP users, including meeting support, and ensure high availability of critical systems",
             "Enroll and manage devices using JAMF (Apple) and Microsoft Intune (HP & Dell)",
             "Provide on-site, email, and phone support while adhering to SLA requirements",
         ],
